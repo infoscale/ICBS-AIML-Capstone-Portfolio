@@ -19,7 +19,7 @@ The KNN model use data produced after Principal Component Analysis of scaled cus
 | PCA | ![Screenshot](./images/PCA-DATA.png) |
 | PCA spread | First 3 PCA components which captures around 86% varience. ![Screenshot](./images/PCA-Applied-customer-centric-data.png) |
 
-KNN alrithm finally produce customer segmentation clusters.
+KNN algorithm finally produce customer segmentation clusters.
 ![Screenshot](./images/customer-segments.png)
 
 ## Performance

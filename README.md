@@ -44,7 +44,7 @@ The results of a KMeans clustering are visualised across forst 3 PCA components 
 Customer spread across the clusters
 ![Screenshot](./images/customer-dictributions-across-clusters.png)
 
-### Recommendations are saved in the file ./data/customer_recommendations.csv
+Recommendations are saved in the file **./data/customer_recommendations.csv**
 
 ## Citations
 This work is inspired by a [kaggle notebook](https://www.kaggle.com/code/farzadnekouei/customer-segmentation-recommendation-system)
