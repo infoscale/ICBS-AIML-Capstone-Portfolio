@@ -31,7 +31,7 @@ The data is unlabelled. For the purpose of recommending products to customers,
 ## HYPERPARAMETER OPTIMSATION
 Euclidian distance is used as a measure to evaluate the nearness of the data points
 
-![Screenshot](./images/../knn-distance.png)
+![Screenshot](./images/knn-distance.png)
 
 The optimum number of clusters **K** is identified by using [*KElbowVisualizer*](https://www.scikit-yb.org/en/latest/api/cluster/elbow.html) from *yellowbrick* library.
 
