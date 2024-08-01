@@ -1,43 +1,50 @@
 # Datasheet Template
 
-As far as you can, complete the model datasheet. If you have got the data from the internet, you may not have all the information you need, but make sure you include all the information you do have. 
+ The E-Commerce Data set is publically made available on [Kaggle site](https://www.kaggle.com/datasets/carrie1/ecommerce-data/data). The data set contains the actual transactions from 2010 and 2011 for a UK based and registered non-store online retail selling goods to wholesaler customers. 
 
 ## Motivation
 
-- For what purpose was the dataset created? 
-- Who created the dataset (e.g., which team, research group) and on behalf of which entity (e.g., company, institution, organization)? Who funded the creation of the dataset?
+- The data is available on [Kaggle](https://www.kaggle.com/datasets/carrie1/ecommerce-data/data) website for machine learning enthusiasts to create and validate clustering and classification models.
+- As per the description on Kaggle site, The data was made available by Dr Daqing Chen, Director: Public Analytics group, school of engineering, London Southbank University
 
  
 ## Composition
 
-- What do the instances that comprise the dataset represent (e.g., documents, photos, people, countries)? 
-- How many instances of each type are there? 
-- Is there any missing data?
-- Does the dataset contain data that might be considered confidential (e.g., data that is protected by legal privilege or by    doctor–patient confidentiality, data that includes the content of individuals’ non-public communications)?
+- The dataset is CSV file with more than half a million transactions. Each transaction is on a separate line 
+- There are about 541909 rows and 8 columns
+  
+  | Column | Description |
+  |--------|-------------|
+  | InvoiceNo | Code representing each unique transaction. Cancelled transactions are prefixed with 'C' |
+  | StockCode | Product SKU |
+  | Description | Product Description |
+  | Quantity | Units of products in a transaction |
+  | InvoiceDate | Transaction date and time |
+  | Unit Price | Product price in GBP / unit |
+  | CustomerID |  Unique customer identification code |
+  | Country | Customer country |
+
+- Some of the columns may have missing data and posibly some duplicates and some invalid entries.
+- The data does not contain any confidential or Personally Identiafiable Information.
 
 ## Collection process
 
-- How was the data acquired? 
-- If the data is a sample of a larger subset, what was the sampling strategy? 
-- Over what time frame was the data collected?
+- The data set contains the actual transactions from 2010 and 2011 for a UK based and registered non-store online retail selling goods to wholesaler customers.
+- There is no further information available as to how the original dataset was acquired.
 
 ## Preprocessing/cleaning/labelling
 
-- Was any preprocessing/cleaning/labeling of the data done (e.g., discretization or bucketing, tokenization, part-of-speech tagging, SIFT feature extraction, removal of instances, processing of missing values)? If so, please provide a description. If not, you may skip the remaining questions in this section. 
-- Was the “raw” data saved in addition to the preprocessed/cleaned/labeled data (e.g., to support unanticipated future uses)? 
+- This is a raw data and will require data cleansing deoending on how it is used.
  
 ## Uses
 
-- What other tasks could the dataset be used for? 
-- Is there anything about the composition of the dataset or the way it was collected and preprocessed/cleaned/labeled that might impact future uses? For example, is there anything that a dataset consumer might need to know to avoid uses that could result in unfair treatment of individuals or groups (e.g., stereotyping, quality of service issues) or other risks or harms (e.g., legal risks, financial harms)? If so, please provide a description. Is there anything a dataset consumer could do to mitigate these risks or harms? 
-- Are there tasks for which the dataset should not be used? If so, please provide a description.
+- Analyses for this dataset could include timeseries, clustering, classification and possibly more.
 
 ## Distribution
 
-- How has the dataset already been distributed? 
-- Is it subject to any copyright or other intellectual property (IP) license, and/or under applicable terms of use (ToU)?  
+- The dataset is downlodable as zip file from [Kaggle website](https://www.kaggle.com/datasets/carrie1/ecommerce-data/data)
 
 ## Maintenance
 
-- Who maintains the dataset?
+- This information as to how this data is actually maintained is currently unknown
 

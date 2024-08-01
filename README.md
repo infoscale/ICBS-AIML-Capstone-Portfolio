@@ -1,24 +1,49 @@
-# PROJECT TITLE 
+# Customer Product Recommendations.
 
-
-## NON-TECHNICAL EXPLANATION OF YOUR PROJECT
-100 words to explain what your project is about to a general audience. 
+## Objective
+Purpose of this project is to create a product recommendations for the customers of a online retail store
 
 ## DATA
-A summary of the data you’re using, remembering to include where you got it and any relevant citations. 
+The dataset contains the actual transactions from 2010 and 2011 for a UK based and registered non-store online retail selling goods to wholesaler customers. This dataset is publically made available on [Kaggle site](https://www.kaggle.com/datasets/carrie1/ecommerce-data/data). its a raw dataset 
+![Screenshot](./images/raw-transactional-data.png)
+
+![Screenshot](./images/stats-raw-transactions-data.png)
+and requires preprocesing activities to remove duplicates and anomalies before it can be used for model building.
 
 ## MODEL 
-A summary of the model you’re using and why you chose it. 
+The data is unlabelled. For the purpose of recommending products to customers, 
+- The transactional data is transformed into customer centric data by extracting customer centic features 
+  ![Screenshot](./images/customer-centirc-data.png)
+  ![Screenshot](./images/correlation-matrix.png)
+- Scale the customer centric data
+  ![Screenshot](./images/scaled-customer-centric-data.png)
+- Principal Component Analysis is applied for dimensionality reduction but retaining spread of varience.
+  ![Screenshot](./images/PCA-Varience.png)
+  Notice that forst three PCA components captures around 86% varience which is good enough for furthet analysis.
+
+  Also spread of PCAs across features are listed below.
+  ![Screenshot](./images/PCA-Applied-customer-centric-data.png)
+
+- KMeans clustering machine learning algorithms is then applied to find customer segments
+- Finally the segments are used to find the best selling products and recommend it to the customers in that segment which has not yet bought that product.
+
 
 ## HYPERPARAMETER OPTIMSATION
-Description of which hyperparameters you have and how you chose to optimise them. 
+Euclidian distance is used as a measure to evaluate the nearness of the data points
+$$
+d(\mathbf{p}, \mathbf{q}) = \sqrt{\sum_{i=1}^{n} {q_i - p_i}^2}
+$$
+
+The optimum number of clusters **K** is identified by using [*KElbowVisualizer*](https://www.scikit-yb.org/en/latest/api/cluster/elbow.html) from *yellowbrick* library.
+
+![Screenshot](./images/Kmeans-Cluster-ElbowChart.png)
 
 ## RESULTS
-A summary of your results and what you can learn from your model 
+The results of a KMeans clustering are visualised across forst 3 PCA components which captures around 86% varience.
+![Screenshot](./images/customer-segments.png)
 
-You can include images of plots using the code below:
-![Screenshot](image.png)
+Customer spread across the clusters
+![Screenshot](./images/customer-dictributions-across-clusters.png)
 
-## (OPTIONAL: CONTACT DETAILS)
-If you are planning on making your github repo public you may wish to include some contact information such as a link to your twitter or an email address. 
-
+## Citations
+This work is inspired by a [kaggle notebook](https://www.kaggle.com/code/farzadnekouei/customer-segmentation-recommendation-system)
