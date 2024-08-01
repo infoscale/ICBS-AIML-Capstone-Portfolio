@@ -25,14 +25,13 @@ The data is unlabelled. For the purpose of recommending products to customers,
   ![Screenshot](./images/PCA-Applied-customer-centric-data.png)
 
 - KMeans clustering machine learning algorithms is then applied to find customer segments
-- Finally the segments are used to find the best selling products and recommend it to the customers in that segment which has not yet bought that product.
+- Finally the segments are used to find the best selling products and recommend it to the customers in that segment which they have not bought yet.
 
 
 ## HYPERPARAMETER OPTIMSATION
 Euclidian distance is used as a measure to evaluate the nearness of the data points
 
 ![Screenshot](./images/../knn-distance.png)
-
 
 The optimum number of clusters **K** is identified by using [*KElbowVisualizer*](https://www.scikit-yb.org/en/latest/api/cluster/elbow.html) from *yellowbrick* library.
 
@@ -44,6 +43,7 @@ The results of a KMeans clustering are visualised across forst 3 PCA components 
 
 Customer spread across the clusters
 ![Screenshot](./images/customer-dictributions-across-clusters.png)
+
 
 ## Citations
 This work is inspired by a [kaggle notebook](https://www.kaggle.com/code/farzadnekouei/customer-segmentation-recommendation-system)
