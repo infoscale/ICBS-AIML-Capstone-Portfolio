@@ -20,7 +20,7 @@ The data is unlabelled. For the purpose of recommending products to customers, d
   ![Screenshot](./images/scaled-customer-centric-data.png)
 - Principal Component Analysis is applied for dimensionality reduction but retaining spread of varience.
   ![Screenshot](./images/PCA-Varience.png)
-  Notice that first five PCA components captures around 90% varience which is good enough for furthet analysis.
+  Notice that first three PCA components captures around 90% varience which is good enough for furthet analysis.
   ![Screenshot](./images/PCA-Applied-customer-centric-data.png)
   Also spread of PCAs across features are listed below.
   ![Screenshot](./images/PCA-DATA.png)
@@ -40,7 +40,7 @@ The optimum number of clusters **K** is identified by using [*KElbowVisualizer*]
 ![Screenshot](./images/Kmeans-Cluster-ElbowChart.png)
 
 ## RESULTS
-The results of a KMeans clustering are visualised across forst 5 PCA components which captures around 90% varience.
+The results of a KMeans clustering are visualised across first 3 PCA components which captures around 90% varience.
 ![Screenshot](./images/customer-segments.png)
 
 Customer spread across the clusters
