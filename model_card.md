@@ -17,18 +17,19 @@ The KNN model use data produced after Principal Component Analysis of scaled cus
 | Customer Data | ![Screenshot](./images/customer-centirc-data.png) |
 | Scaled Customer Data | ![Screenshot](./images/scaled-customer-centric-data.png) |
 | PCA | ![Screenshot](./images/PCA-DATA.png) |
-| PCA spread | First 3 PCA components which captures around 86% varience. ![Screenshot](./images/PCA-Applied-customer-centric-data.png) |
+| PCA spread | First 5 PCA components which captures around 90% varience. ![Screenshot](./images/PCA-Applied-customer-centric-data.png) |
 
 KNN algorithm finally produce customer segmentation clusters.
 ![Screenshot](./images/customer-segments.png)
 
-## Performance
+## Performance 
+### KMeans
 
 | Metric | Score | Description |
 |--------|-------|-------------|
-| Slihoutte Score | **0.4041** | Indicates fare amount of separation between the clusters |
-| Calinski Harabasz Score | **3132.59** |Considerably high, indicating clusters are well defined |
-| Davies Bouldin Score | **0.86109** | Indicates good separation between the clusters |
+| Slihoutte Score | **0.3450** | Indicates fare amount of separation between the clusters |
+| Calinski Harabasz Score | **1919.00** |Considerably high, indicating clusters are well defined |
+| Davies Bouldin Score | **1.0767** | Indicates good separation between the clusters |
 
 ## Limitations
 
