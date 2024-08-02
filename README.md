@@ -1,7 +1,7 @@
 # Customer Product Recommendations.
 
 ## Objective
-Purpose of this project is to create a product recommendations for the customers of a online retail store
+Purpose of this project is to create a product recommendations for the customers of a online retail store. Final recommendations are stored in the file **data/customer_recomendations.csv**.
 
 ## DATA
 The dataset contains the actual transactions from 2010 and 2011 for a UK based and registered non-store online retail selling goods to wholesaler customers. This dataset is publically made available on [Kaggle site](https://www.kaggle.com/datasets/carrie1/ecommerce-data/data). its a raw dataset 
@@ -11,7 +11,8 @@ The dataset contains the actual transactions from 2010 and 2011 for a UK based a
 and requires preprocesing activities to remove duplicates and anomalies before it can be used for model building.
 
 ## MODEL 
-The data is unlabelled. For the purpose of recommending products to customers, 
+The data is unlabelled. For the purpose of recommending products to customers, data has been pre-processed befor using for model building. The process is explained below.
+
 - The transactional data is transformed into customer centric data by extracting customer centic features 
   ![Screenshot](./images/customer-centirc-data.png)
   ![Screenshot](./images/correlation-matrix.png)
@@ -20,9 +21,9 @@ The data is unlabelled. For the purpose of recommending products to customers,
 - Principal Component Analysis is applied for dimensionality reduction but retaining spread of varience.
   ![Screenshot](./images/PCA-Varience.png)
   Notice that first five PCA components captures around 90% varience which is good enough for furthet analysis.
-
-  Also spread of PCAs across features are listed below.
   ![Screenshot](./images/PCA-Applied-customer-centric-data.png)
+  Also spread of PCAs across features are listed below.
+  ![Screenshot](./images/PCA-DATA.png)
 - Hierarchial Clustering is applied to have quick view of the distribution
   ![Screenshot](./images/hierarchial_clustring.png)
 - KMeans clustering machine learning algorithms is then applied to find customer segments
