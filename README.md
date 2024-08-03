@@ -13,19 +13,32 @@ and requires preprocesing activities to remove duplicates and anomalies before i
 ## MODEL 
 The data is unlabelled. For the purpose of recommending products to customers, data has been pre-processed befor using for model building. The process is explained below.
 
-- The transactional data is transformed into customer centric data by extracting customer centic features 
+- The transactional data is transformed into customer centric data by extracting customer centic features.
+  
   ![Screenshot](./images/customer-centirc-data.png)
+
   ![Screenshot](./images/correlation-matrix.png)
+
 - Scale the customer centric data
+  
   ![Screenshot](./images/scaled-customer-centric-data.png)
+
 - Principal Component Analysis is applied for dimensionality reduction but retaining spread of varience.
+  
   ![Screenshot](./images/PCA-Varience.png)
+
   Notice that first three PCA components captures around 90% varience which is good enough for furthet analysis.
+
   ![Screenshot](./images/PCA-Applied-customer-centric-data.png)
+
   Also spread of PCAs across features are listed below.
+
   ![Screenshot](./images/PCA-DATA.png)
+
 - Hierarchial Clustering is applied to have quick view of the distribution
+  
   ![Screenshot](./images/hierarchial_clustring.png)
+
 - KMeans clustering machine learning algorithms is then applied to find customer segments
 - Finally the segments are used to find the best selling products and recommend it to the customers in that segment which they have not bought yet.
 
@@ -41,12 +54,15 @@ The optimum number of clusters **K** is identified by using [*KElbowVisualizer*]
 
 ## RESULTS
 The results of a KMeans clustering are visualised across first 3 PCA components which captures around 90% varience.
+
 ![Screenshot](./images/customer-segments.png)
 
-Customer spread across the clusters
+Customer spread across the clusters.
+
 ![Screenshot](./images/customer-distributions-across-clusters.png)
 
-Features distribution across the clusters
+Features distribution across the clusters.
+
 ![Screenshot](./images/FeatureDistributionsAcrossClusters.png)
 
 Recommendations are saved in the file **./data/customer_recommendations.csv**
