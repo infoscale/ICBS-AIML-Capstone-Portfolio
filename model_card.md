@@ -34,7 +34,6 @@ KNN algorithm finally produce customer segmentation clusters.
 ## Limitations
 
 - The model can only be used for the intended purpose which is to create product recommendations.
-- For a new customer, segment assigment data processing steps such as feature extraction, PCA etc. would need to be re-applied.
 - The process would some lead time and data collection activities before makiing effective recommendations.
 - This model does not consider customers product returned / cancellation behaviour during recommendations.
 - Only one product is recommended as of now, however it is possible to male more than one recommendations.
